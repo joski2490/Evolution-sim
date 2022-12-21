@@ -8,7 +8,7 @@ reproduction: [% of lifespan before reproduction: Number, % chance of reproducti
 */
 
 class Species {
-    constructor(genes = { lifespan: 100, reproduction: [30, 60, 1], }, max_deviation = 2, max_population = 50, group) {
+    constructor(genes = { lifespan: 100, reproduction: [30, 60, 1], }, max_deviation = 10, max_population = 150, group) {
         this.genes = genes;
 
         this.group = group;
@@ -49,7 +49,7 @@ class Species {
         }
     }
 
-    start(number_of_starting_members = 3, organism) {
+    start(number_of_starting_members = 6, organism) {
         let rand = {
             x: Math.floor(Math.random() * 80) * 10,
             y: Math.floor(Math.random() * 80) * 10,
