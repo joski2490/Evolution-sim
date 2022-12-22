@@ -2,7 +2,7 @@ let space = Pebble.Keyboard(32, document.body);
 
 world.addNewScene(
     function(world, scene, group) {
-        scene.species = new Species({ lifespan: 25, reproduction: [80, 90, 0], }, 1, 50, group); // 100 - 30, 60, 3 - 1 - 50 - group
+        scene.species = new Species({ lifespan: 25, reproduction: [1, 220, 0], }, 1, 50, group); // 100 - 30, 60, 3 - 1 - 50 - group
 
         scene.species.start(3, () => { return new Organism(20, 20, scene.species.color, scene.species.genes, scene.species) });
 
