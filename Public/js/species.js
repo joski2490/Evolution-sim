@@ -8,7 +8,7 @@ reproduction: [% of lifespan before reproduction: Number, % chance of reproducti
 */
 
 class Species {
-    constructor(genes = { lifespan: 25, reproduction: [5, 95, 0], }, max_deviation = 10, max_population = 50, group) {
+    constructor(genes = { lifespan: 25, reproduction: [5, 95, 2], }, max_deviation = 10, max_population = 50, group) {
         this.genes = genes;
 
         this.group = group;
