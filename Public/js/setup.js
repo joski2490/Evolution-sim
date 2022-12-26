@@ -5,6 +5,7 @@ world.addNewScene(
         // org 1
         scene.species = new Species({ lifespan: 25, reproduction: [5, 95, 1], }, 1, 50, group); // 100 - 30, 60, 3 - 1 - 50 - group
         scene.species.start(3, () => { return new Organism(20, 20, scene.species.color, scene.species.genes, scene.species) });
+        group.add(scene.species, scene.population_counter, scene.gene_counter);
         // org 2
         scene.species = new Species({ lifespan: 75, reproduction: [1, 99, 0 ], }, 1, 50, group);
         scene.species.start(3, () => { return new Organism(40, 40, scene.species.color, scene.species.genes, scene.species) });
